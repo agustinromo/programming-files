@@ -1,0 +1,22 @@
+#include <stdio.h>  
+int main() 
+{ 
+    int i; 
+    char az[25];  
+    for(i=97;i<=122;i++) 
+    { 
+     printf("%c\n",i); 
+    } 
+    int j; 
+    char AZ[25]; 
+    for(j=65;j<=90;j++) 
+    { 
+     printf("%c\n",j); 
+    } 
+    int k; 
+    int num[99];  
+    for(k=0;k<=99;k++) 
+    { 
+    printf("%d\n",k); 
+    }
+}

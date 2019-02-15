@@ -1,0 +1,12 @@
+clc;clear;close all; 
+
+a0=1/2; 
+b1=2/pi; 
+b3=2/(3*pi); 
+b5=2/(5*pi); 
+b7=2/(7*pi); 
+b9=2/(9*pi); 
+
+t=0:0.01:6*pi; 
+f_t=a0+b1*sin(t)+b3*sin(3*t)+b5*sin(5*t)+b7*sin(7*t)+b9*sin(9*t); 
+plot(t,f_t)  

@@ -1,0 +1,8 @@
+Array.java 
+public class Array 
+{  
+       public static void main(String []args){ 
+       int op=0; 
+       int numero; 
+       int []array=new Scanner(System.in); 
+       System.out.println("Introduce un numero");

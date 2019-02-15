@@ -1,0 +1,29 @@
+Library IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+entity FFD is -- declaracion de variables de entrada y una salida
+port ( Nin   : in std_logic;
+       clk   : in std_logic;
+       clear : in std_logic;
+       set   : in std_logic;
+       Qt    : out std_logic 
+       );
+end FFD;
+-- Declaacion de proceso para determinar las prioridades del programa --
+architecture FLIP_FLOP of FFD is
+begin 
+  process (clk, clear, set)
+        variable vQt : std_logic;
+        begin
+        if clear = '0' then
+        vQt := '0';
+        Qt <= '0';
+        elsif (clk 'EVENT AND clk = '1') then
+        if set = '1' then
+        vQt := Nin;
+       
+else 
+  Qt <= not VQt;
+ end if;
+ end if;
+ end process;
+ end architecture;
